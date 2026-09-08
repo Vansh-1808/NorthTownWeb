@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Town | 33 Towers & 111 Villas - Luxury Township Amenities & Facilities</title>
+  <meta name="description" content="Experience North Town: A premier integrated township spanning 30+ acres with 33 high-rise towers, 111 luxury villas, Olympic dual swimming pools, a 50,000 sq.ft. clubhouse, and 50+ world-class amenities.">
+  <meta name="keywords" content="North Town, 33 Towers, 111 Villas, Luxury Apartments, Swimming Pool, Clubhouse, Gated Community, Township Facilities">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome / Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+
+  <!-- Ambient Sound Control & Quick Status -->
+  <div class="top-status-bar">
+    <div class="status-inner container">
+      <div class="status-left">
+        <span class="live-pill"><span class="pulse-dot"></span> TOWNSHIP STATUS: ACTIVE & SECURED</span>
+        <span class="status-stat"><i class="fa-solid fa-building"></i> 33 Towers</span>
+        <span class="status-stat"><i class="fa-solid fa-house-chimney-window"></i> 111 Villas</span>
+        <span class="status-stat"><i class="fa-solid fa-water-ladder"></i> Olympic Pools Open</span>
+      </div>
+      <div class="status-right">
+        <button id="sound-toggle-btn" class="sound-toggle-btn" title="Toggle Township Ambient Soundscape" aria-label="Toggle sound">
+          <i class="fa-solid fa-volume-xmark" id="sound-icon"></i>
+          <span id="sound-text">Ambient Sound: Off</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Luxury Navigation -->
+  <header id="main-header" class="main-header">
+    <div class="nav-container container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-emblem">
+          <i class="fa-solid fa-compass-drafting"></i>
+        </div>
+        <div class="logo-text-group">
+          <span class="brand-name">NORTH TOWN</span>
+          <span class="brand-sub">33 TOWERS &bull; 111 VILLAS</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" id="desktop-nav">
+        <ul class="nav-menu">
+          <li><a href="#journey-section" class="nav-link"><i class="fa-solid fa-film"></i> The Journey</a></li>
+          <li><a href="#compare-section" class="nav-link"><i class="fa-solid fa-shapes"></i> Towers vs Villas</a></li>
+          <li><a href="#amenities-section" class="nav-link"><i class="fa-solid fa-gem"></i> Amenities & Facilities</a></li>
+          <li><a href="#campus-map-section" class="nav-link"><i class="fa-solid fa-map-location-dot"></i> Master Plan</a></li>
+          <li><a href="#simulator-section" class="nav-link"><i class="fa-solid fa-calendar-check"></i> Book Amenity</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact-section" id="header-cta-btn" class="btn btn-primary-gold">
+          <span>Schedule Visit</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+      <ul class="mobile-menu">
+        <li><a href="#journey-section" class="mobile-link">The Journey</a></li>
+        <li><a href="#compare-section" class="mobile-link">33 Towers vs 111 Villas</a></li>
+        <li><a href="#amenities-section" class="mobile-link">Amenities & Facilities</a></li>
+        <li><a href="#campus-map-section" class="mobile-link">Campus Master Plan</a></li>
+        <li><a href="#simulator-section" class="mobile-link">Amenity Booking Simulator</a></li>
+        <li><a href="#contact-section" class="mobile-link">Schedule a Campus Visit</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-glow-sphere"></div>
+      <div class="hero-glow-cyan"></div>
+
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>GATED ULTRA-LUXURY TOWNSHIP &bull; 30+ ACRES</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-title-top">EXPERIENCE THE GRANDEUR OF</span>
+          <span class="hero-title-main">NORTH TOWN</span>
+          <span class="hero-title-gold">33 TOWERS &bull; 111 VILLAS</span>
+        </h1>
+
+        <p class="hero-desc">
+          Step into an architectural haven designed for elevated living. Discover Olympic dual swimming pools, a 50,000 sq.ft. premier clubhouse, serene tree-lined villa boulevards, and panoramic high-rise skies.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#journey-section" class="btn btn-gold-large" id="hero-explore-journey">
+            <span>Scroll The Journey</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a href="#amenities-section" class="btn btn-glass-large" id="hero-view-amenities">
+            <i class="fa-solid fa-sparkles"></i>
+            <span>Explore 50+ Amenities</span>
+          </a>
+          <a href="#campus-map-section" class="btn btn-glass-large" id="hero-view-map">
+            <i class="fa-solid fa-map"></i>
+            <span>Interactive Map</span>
+          </a>
+        </div>
+
+        <!-- Key Township Metrics -->
+        <div class="hero-stats-grid">
+          <div class="stat-card" data-tilt>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-count="33">33</span>
+            </div>
+            <div class="stat-label">Majestic Towers</div>
+            <div class="stat-sub">14-storey skyline living with grand reception lobbies</div>
+          </div>
+
+          <div class="stat-card" data-tilt>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-count="111">111</span>
+            </div>
+            <div class="stat-label">Signature Villas</div>
+            <div class="stat-sub">Private duplex & triplex estates with manicured gardens</div>
+          </div>
+
+          <div class="stat-card" data-tilt>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-count="2">2</span>
+            </div>
+            <div class="stat-label">Olympic Pools</div>
+            <div class="stat-sub">Dual lap & splash pools with resort sun loungers</div>
+          </div>
+
+          <div class="stat-card" data-tilt>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-count="50">50</span><span class="stat-plus">+</span>
+            </div>
+            <div class="stat-label">Amenities & Facilities</div>
+            <div class="stat-sub">Clubhouse, sports courts, wellness & 24/7 security</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-down-cue">
+        <a href="#journey-section" class="scroll-pill" aria-label="Scroll down">
+          <span class="scroll-text">SCROLL TO EXPLORE TOWNSHIP</span>
+          <div class="mouse-icon">
+            <div class="mouse-wheel"></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- PINNED SCROLL-TRIGGERED SHOWCASE: THE NORTH TOWN JOURNEY -->
+    <section id="journey-section" class="journey-section">
+      <div class="section-intro container">
+        <div class="section-badge"><i class="fa-solid fa-compass"></i> CURATED PHOTO SHOWCASE</div>
+        <h2 class="section-title">A Scroll-Triggered Tour Through North Town</h2>
+        <p class="section-subtitle">Glide through our authentic township grounds, from the monumental gated portal to the Olympic waters and serene villa avenues.</p>
+      </div>
+
+      <!-- Horizontal / Pinned Multi-Chapter Reel -->
+      <div class="journey-reel-container" id="journey-reel">
+        <div class="journey-track" id="journey-track">
+          
+          <!-- STOP 1: GRAND ENTRANCE PORTAL -->
+          <article class="journey-slide" id="slide-entrance">
+            <div class="slide-media-wrap">
+              <img src="assets/images/entrance_gate.jpg" alt="North Town Grand Entrance Gate and Gated Township Portal" class="slide-img">
+              <div class="slide-badge-overlay"><i class="fa-solid fa-door-open"></i> TOWNSHIP GATEWAY</div>
+            </div>
+            <div class="slide-content">
+              <div class="slide-step">CHAPTER 01 / 05</div>
+              <h3 class="slide-title">The Grand Gated Entrance</h3>
+              <p class="slide-description">
+                Welcome to North Town. Greeted by the iconic monolithic stone monument, grand architectural pergola, and 24/7 guarded security portals. Designed with separate RFID entry/exit lanes, perimeter biometric controls, and manicured green berms.
+              </p>
+              <ul class="slide-features">
+                <li><i class="fa-solid fa-shield-check"></i> 24/7 High-Security RFID Boom Barriers</li>
+                <li><i class="fa-solid fa-tree"></i> Landscaped Entry Plaza with Stone Mushroom Lanterns</li>
+                <li><i class="fa-solid fa-road"></i> 60-ft Broad Avenue with Palm-lined Medians</li>
+                <li><i class="fa-solid fa-camera"></i> 360&deg; CCTV Surveillance Network</li>
+              </ul>
+              <div class="slide-meta">
+                <span class="meta-tag"><i class="fa-solid fa-location-dot"></i> Main Township Boulevard</span>
+                <button class="btn btn-outline-gold open-modal-btn" data-amenity="entrance">
+                  <i class="fa-solid fa-expand"></i> View Gate Specs
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- STOP 2: 33 HIGH-RISE TOWERS -->
+          <article class="journey-slide" id="slide-towers">
+            <div class="slide-media-wrap">
+              <img src="assets/images/tower_19.jpg" alt="North Town Tower 19 high rise residential apartment building" class="slide-img">
+              <div class="slide-badge-overlay"><i class="fa-solid fa-building"></i> SKYLINE ELEVATION</div>
+            </div>
+            <div class="slide-content">
+              <div class="slide-step">CHAPTER 02 / 05</div>
+              <h3 class="slide-title">33 Majestic High-Rise Towers</h3>
+              <p class="slide-description">
+                Tower 19 stands proud among the 33 towering residential marvels. Featuring modern contemporary geometry, deep-set sunshade balconies, double-height reception lobbies, and Otis high-speed elevators.
+              </p>
+              <ul class="slide-features">
+                <li><i class="fa-solid fa-building-user"></i> 33 Landmark Towers with Grand Drop-off Porches</li>
+                <li><i class="fa-solid fa-elevator"></i> 3 High-Speed Lifts per Core + Service Elevators</li>
+                <li><i class="fa-solid fa-bolt"></i> 100% DG Power Backup for All Homes & Common Areas</li>
+                <li><i class="fa-solid fa-wind"></i> 3-Side Open Architecture for Optimal Cross-Ventilation</li>
+              </ul>
+              <div class="slide-meta">
+                <span class="meta-tag"><i class="fa-solid fa-layer-group"></i> 2, 3 & 4 BHK Luxury Residences</span>
+                <button class="btn btn-outline-gold open-modal-btn" data-amenity="towers">
+                  <i class="fa-solid fa-expand"></i> Explore Tower Details
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- STOP 3: 111 LUXURY VILLAS -->
+          <article class="journey-slide" id="slide-villas">
+            <div class="slide-media-wrap">
+              <img src="assets/images/luxury_villas.png" alt="North Town 111 luxury duplex villas row with private gardens" class="slide-img">
+              <div class="slide-badge-overlay"><i class="fa-solid fa-house-chimney"></i> PRIVATE ENCLAVE</div>
+            </div>
+            <div class="slide-content">
+              <div class="slide-step">CHAPTER 03 / 05</div>
+              <h3 class="slide-title">111 Signature Luxury Villas</h3>
+              <p class="slide-description">
+                An exclusive enclave of 111 independent duplex and triplex villas. Each residence is framed by manicured front lawns, private shaded parking, expansive rooftop leisure terraces, and peaceful, tree-lined quiet internal lanes.
+              </p>
+              <ul class="slide-features">
+                <li><i class="fa-solid fa-house-flag"></i> 111 Bespoke Villas with Zero Shared Living Walls</li>
+                <li><i class="fa-solid fa-seedling"></i> Private Front Lawns & Terrace Herb Gardens</li>
+                <li><i class="fa-solid fa-square-parking"></i> Covered Dual-Vehicle Driveway Parking</li>
+                <li><i class="fa-solid fa-shield-cat"></i> Child-Safe Pedestrian Walkways & Low Speed Enclave</li>
+              </ul>
+              <div class="slide-meta">
+                <span class="meta-tag"><i class="fa-solid fa-gem"></i> G+1 & G+2 Independent Villas</span>
+                <button class="btn btn-outline-gold open-modal-btn" data-amenity="villas">
+                  <i class="fa-solid fa-expand"></i> View Villa Features
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- STOP 4: OLYMPIC DUAL SWIMMING POOLS & CLUBHOUSE -->
+          <article class="journey-slide" id="slide-pool-olympic">
+            <div class="slide-media-wrap">
+              <img src="assets/images/olympic_pool.jpg" alt="North Town Olympic Dual Swimming Pools and Clubhouse" class="slide-img">
+              <div class="slide-badge-overlay"><i class="fa-solid fa-water-ladder"></i> AQUATIC COMPLEX</div>
+            </div>
+            <div class="slide-content">
+              <div class="slide-step">CHAPTER 04 / 05</div>
+              <h3 class="slide-title">Olympic Dual Swimming Complex</h3>
+              <p class="slide-description">
+                Dive into crystal-clear turquoise waters. Our aquatic zone boasts a competition-length semi-Olympic lap pool paired with a dedicated shallow leisure and kids splash pool, all set against the backdrop of the architectural clubhouse.
+              </p>
+              <ul class="slide-features">
+                <li><i class="fa-solid fa-swimming-pool"></i> Dual Pool Configuration (Lap Pool + Kids Splash Pool)</li>
+                <li><i class="fa-solid fa-water"></i> German Micro-Filtration & Ozonated Fresh Water</li>
+                <li><i class="fa-solid fa-life-ring"></i> Certified Lifeguards on Duty (6:00 AM - 9:00 PM)</li>
+                <li><i class="fa-solid fa-shower"></i> Modern Changing Suites with Steam & Sauna Rooms</li>
+              </ul>
+              <div class="slide-meta">
+                <span class="meta-tag"><i class="fa-solid fa-clock"></i> 06:00 AM - 09:30 PM Daily</span>
+                <button class="btn btn-outline-gold open-modal-btn" data-amenity="pool-olympic">
+                  <i class="fa-solid fa-expand"></i> Inspect Pool Specs
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- STOP 5: POOLSIDE OASIS & SUN DECK -->
+          <article class="journey-slide" id="slide-pool-deck">
+            <div class="slide-media-wrap">
+              <img src="assets/images/pool_deck.jpg" alt="North Town Poolside Sun Deck with loungers and parasols" class="slide-img">
+              <div class="slide-badge-overlay"><i class="fa-solid fa-umbrella-beach"></i> RESORT SUN DECK</div>
+            </div>
+            <div class="slide-content">
+              <div class="slide-step">CHAPTER 05 / 05</div>
+              <h3 class="slide-title">Resort Deck & Poolside Lounge</h3>
+              <p class="slide-description">
+                Unwind under the sun in style. Fitted with luxury cushioned loungers, large shade parasols, non-slip textured stone decking, and a poolside refreshment pavilion bordered by lush green canopy trees.
+              </p>
+              <ul class="slide-features">
+                <li><i class="fa-solid fa-chair"></i> Ergonomic Sunbed Loungers & Parasol Cabanas</li>
+                <li><i class="fa-solid fa-mug-hot"></i> Poolside Juice & Beverage Kiosk</li>
+                <li><i class="fa-solid fa-wifi"></i> Township Wi-Fi Zone for Remote Work by the Water</li>
+                <li><i class="fa-solid fa-moon"></i> Submerged LED Mood Lighting for Evening Relaxation</li>
+              </ul>
+              <div class="slide-meta">
+                <span class="meta-tag"><i class="fa-solid fa-martini-glass"></i> Resident Wellness Zone</span>
+                <button class="btn btn-outline-gold open-modal-btn" data-amenity="pool-deck">
+                  <i class="fa-solid fa-expand"></i> View Deck Lounge
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: TOWERS VS VILLAS INTERACTIVE COMPARISON -->
+    <section id="compare-section" class="compare-section">
+      <div class="container">
+        <div class="section-intro text-center">
+          <div class="section-badge"><i class="fa-solid fa-scale-balanced"></i> ARCHITECTURAL LIFESTYLES</div>
+          <h2 class="section-title">Choose Your Way of Living at North Town</h2>
+          <p class="section-subtitle">Whether you crave high-altitude sky breezes or grounded private garden serenity, North Town offers both at an unprecedented scale.</p>
+        </div>
+
+        <div class="compare-toggle-wrap">
+          <div class="compare-tabs">
+            <button class="compare-tab-btn active" id="tab-towers-btn" data-target="towers">
+              <i class="fa-solid fa-building"></i>
+              <span>The 33 High-Rise Towers</span>
+            </button>
+            <button class="compare-tab-btn" id="tab-villas-btn" data-target="villas">
+              <i class="fa-solid fa-house-chimney-window"></i>
+              <span>The 111 Signature Villas</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Compare Content Container -->
+        <div class="compare-cards-container">
+          
+          <!-- Tower Living Card -->
+          <div class="compare-card active" id="card-towers">
+            <div class="compare-card-grid">
+              <div class="compare-image-side">
+                <img src="assets/images/tower_19.jpg" alt="North Town High Rise Apartment Towers" class="compare-card-img">
+                <div class="compare-img-badge">33 TOWERS &bull; G+14 FLOORS</div>
+              </div>
+              <div class="compare-info-side">
+                <div class="compare-header">
+                  <span class="eyebrow">SKYLINE HOMES</span>
+                  <h3>Elevated Living in 33 High-Rise Towers</h3>
+                  <p>Designed for discerning families who love unobstructed skyline vistas, seamless elevator convenience, and a vibrant community atmosphere.</p>
+                </div>
+
+                <div class="spec-matrix">
+                  <div class="spec-item">
+                    <span class="spec-label">Total Towers</span>
+                    <span class="spec-val">33 Towers</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Configurations</span>
+                    <span class="spec-val">2, 3 & 4 BHK Residences</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Balcony Vistas</span>
+                    <span class="spec-val">Panoramic Township & Pool Views</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Elevator Access</span>
+                    <span class="spec-val">High-speed Otis Passenger + Stretcher Lifts</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Security</span>
+                    <span class="spec-val">Lobby Video Intercom & Floor Access Control</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Car Parking</span>
+                    <span class="spec-val">Multi-Level Dedicated Basement & Stilt Bays</span>
+                  </div>
+                </div>
+
+                <div class="compare-actions">
+                  <a href="#amenities-section" class="btn btn-primary-gold">Explore Tower Amenities</a>
+                  <button class="btn btn-outline-gold open-modal-btn" data-amenity="towers">View Specifications</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Villa Living Card -->
+          <div class="compare-card" id="card-villas">
+            <div class="compare-card-grid">
+              <div class="compare-image-side">
+                <img src="assets/images/luxury_villas.png" alt="North Town 111 Independent Luxury Villas" class="compare-card-img">
+                <div class="compare-img-badge">111 VILLAS &bull; DUPLEX & TRIPLEX</div>
+              </div>
+              <div class="compare-info-side">
+                <div class="compare-header">
+                  <span class="eyebrow">PRIVATE ENCLAVES</span>
+                  <h3>Independent Duplex Luxury in 111 Villas</h3>
+                  <p>For those who desire supreme privacy, zero shared walls, personal garden lawns, and an intimate avenue atmosphere within a master-planned township.</p>
+                </div>
+
+                <div class="spec-matrix">
+                  <div class="spec-item">
+                    <span class="spec-label">Total Villas</span>
+                    <span class="spec-val">111 Exclusive Villas</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Configurations</span>
+                    <span class="spec-val">3 & 4 BHK Duplex / Triplex</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Outdoor Space</span>
+                    <span class="spec-val">Private Front Lawn & Open Sky Terraces</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Shared Walls</span>
+                    <span class="spec-val">Zero (100% Independent Structure)</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Parking Space</span>
+                    <span class="spec-val">Private Covered Portico (2 Cars + 2 Bikes)</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Avenue Perks</span>
+                    <span class="spec-val">Tree-lined Speed-calmed Internal Streets</span>
+                  </div>
+                </div>
+
+                <div class="compare-actions">
+                  <a href="#amenities-section" class="btn btn-primary-gold">Explore Villa Amenities</a>
+                  <button class="btn btn-outline-gold open-modal-btn" data-amenity="villas">View Villa Specifications</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: AMENITIES & FACILITIES SHOWCASE (FILTERABLE MATRIX) -->
+    <section id="amenities-section" class="amenities-section">
+      <div class="container">
+        <div class="section-intro text-center">
+          <div class="section-badge"><i class="fa-solid fa-award"></i> 50+ WORLD-CLASS FACILITIES</div>
+          <h2 class="section-title">Amenities Crafted for Every Generation</h2>
+          <p class="section-subtitle">From professional-grade aquatic centers to air-conditioned fitness zones, North Town elevates daily community life into a perpetual holiday.</p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="amenities-filter-bar">
+          <button class="filter-pill active" data-filter="all">
+            <i class="fa-solid fa-border-all"></i> All Facilities (10)
+          </button>
+          <button class="filter-pill" data-filter="aquatics">
+            <i class="fa-solid fa-water-ladder"></i> Aquatics & Pools (2)
+          </button>
+          <button class="filter-pill" data-filter="clubhouse">
+            <i class="fa-solid fa-martini-glass-citrus"></i> Clubhouse & Leisure (3)
+          </button>
+          <button class="filter-pill" data-filter="sports">
+            <i class="fa-solid fa-dumbbell"></i> Sports & Fitness (2)
+          </button>
+          <button class="filter-pill" data-filter="nature">
+            <i class="fa-solid fa-tree"></i> Parks & Outdoors (2)
+          </button>
+          <button class="filter-pill" data-filter="security">
+            <i class="fa-solid fa-shield-halved"></i> Security & Tech (1)
+          </button>
+        </div>
+
+        <!-- Amenities Grid -->
+        <div class="amenities-grid" id="amenities-grid">
+          
+          <!-- Amenity 1: Olympic Lap Pool -->
+          <div class="amenity-card" data-category="aquatics">
+            <div class="amenity-thumb-wrap">
+              <img src="assets/images/olympic_pool.jpg" alt="Olympic Lap Swimming Pool" class="amenity-thumb">
+              <span class="amenity-cat-badge">Aquatics</span>
+              <span class="amenity-status-badge available"><i class="fa-solid fa-circle-check"></i> Open Daily</span>
+            </div>
+            <div class="amenity-body">
+              <div class="amenity-meta-row">
+                <span><i class="fa-regular fa-clock"></i> 06:00 - 21:30</span>
+                <span><i class="fa-solid fa-users"></i> Up to 60 Swimmers</span>
+              </div>
+              <h3 class="amenity-card-title">Olympic Dual Swimming Pool Complex</h3>
+              <p class="amenity-card-desc">State-of-the-art semi-Olympic competition lap pool alongside a dedicated kids splash pool with ozonated filtration.</p>
+              <div class="amenity-tags">
+                <span>Lap Swimming</span>
+                <span>Ozonated Water</span>
+                <span>Lifeguards</span>
+              </div>
+              <div class="amenity-card-footer">
+                <button class="btn-card-action open-modal-btn" data-amenity="pool-olympic">
+                  <span>Explore Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <a href="#simulator-section" class="btn-card-book" title="Book Slot">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amenity 2: Resort Sun Deck & Loungers -->
+          <div class="amenity-card" data-category="aquatics">
+            <div class="amenity-thumb-wrap">
+              <img src="assets/images/pool_deck.jpg" alt="Poolside Sun Loungers and Deck" class="amenity-thumb">
+              <span class="amenity-cat-badge">Aquatics</span>
+              <span class="amenity-status-badge available"><i class="fa-solid fa-circle-check"></i> Open Daily</span>
+            </div>
+            <div class="amenity-body">
+              <div class="amenity-meta-row">
+                <span><i class="fa-regular fa-clock"></i> 06:00 - 22:00</span>
+                <span><i class="fa-solid fa-umbrella-beach"></i> 30+ Loungers</span>
+              </div>
+              <h3 class="amenity-card-title">Poolside Sun Deck & Cabana Lounge</h3>
+              <p class="amenity-card-desc">Expansive sun deck with cushioned loungers, oversized parasols, non-slip stone patio, and shaded tropical trees.</p>
+              <div class="amenity-tags">
+                <span>Sun Loungers</span>
+                <span>Cabanas</span>
+                <span>Night Lighting</span>
+              </div>
+              <div class="amenity-card-footer">
+                <button class="btn-card-action open-modal-btn" data-amenity="pool-deck">
+                  <span>Explore Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <a href="#simulator-section" class="btn-card-book" title="Book Slot">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amenity 3: 50,000 sq ft Clubhouse -->
+          <div class="amenity-card" data-category="clubhouse">
+            <div class="amenity-thumb-wrap">
+              <img src="assets/images/olympic_pool.jpg" alt="Grand North Town Clubhouse" class="amenity-thumb">
+              <span class="amenity-cat-badge">Clubhouse</span>
+              <span class="amenity-status-badge available"><i class="fa-solid fa-circle-check"></i> Open Daily</span>
+            </div>
+            <div class="amenity-body">
+              <div class="amenity-meta-row">
+                <span><i class="fa-regular fa-clock"></i> 06:00 - 23:00</span>
+                <span><i class="fa-solid fa-ruler-combined"></i> 50,000 Sq.Ft</span>
+              </div>
+              <h3 class="amenity-card-title">Multi-Storey Grand Clubhouse</h3>
+              <p class="amenity-card-desc">The vibrant social heart of North Town. Houses banquet halls, indoor games, squash, business lounge, and library.</p>
+              <div class="amenity-tags">
+                <span>Banquet Hall</span>
+                <span>Indoor Games</span>
+                <span>Business Center</span>
+              </div>
+              <div class="amenity-card-footer">
+                <button class="btn-card-action open-modal-btn" data-amenity="clubhouse">
+                  <span>Explore Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <a href="#simulator-section" class="btn-card-book" title="Book Slot">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amenity 4: Luxury Fitness Gymnasium -->
+          <div class="amenity-card" data-category="sports">
+            <div class="amenity-thumb-wrap">
+              <img src="assets/images/fitness_gym.jpg" alt="Luxury Fitness Gymnasium" class="amenity-thumb">
+              <span class="amenity-cat-badge">Sports & Fitness</span>
+              <span class="amenity-status-badge available"><i class="fa-solid fa-circle-check"></i> Open Daily</span>
+            </div>
+            <div class="amenity-body">
+              <div class="amenity-meta-row">
+                <span><i class="fa-regular fa-clock"></i> 05:30 - 22:30</span>
+                <span><i class="fa-solid fa-dumbbell"></i> Technogym</span>
+              </div>
+              <h3 class="amenity-card-title">State-of-the-Art Fitness Arena</h3>
+              <p class="amenity-card-desc">Fully equipped commercial-grade gym with panoramic nature views, cardio stations, free weights, and certified trainers.</p>
+              <div class="amenity-tags">
+                <span>Cardio Studio</span>
+                <span>Weight Training</span>
+                <span>Personal Trainers</span>
+              </div>
+              <div class="amenity-card-footer">
+                <button class="btn-card-action open-modal-btn" data-amenity="gym">
+                  <span>Explore Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <a href="#simulator-section" class="btn-card-book" title="Book Slot">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amenity 5: Grand Entrance & Security Portal -->
+          <div class="amenity-card" data-category="security">
+            <div class="amenity-thumb-wrap">
+              <img src="assets/images/entrance_gate.jpg" alt="Grand Entrance Portal & Security" class="amenity-thumb">
+              <span class="amenity-cat-badge">Security</span>
+              <span class="amenity-status-badge available"><i class="fa-solid fa-circle-check"></i> 24/7 Monitored</span>
+            </div>
+            <div class="amenity-body">
+              <div class="amenity-meta-row">
+                <span><i class="fa-regular fa-clock"></i> 24 Hours / 365 Days</span>
+                <span><i class="fa-solid fa-video"></i> Multi-Point CCTV</span>
+              </div>
+              <h3 class="amenity-card-title">Gated Security Portal & Boom Barriers</h3>
+              <p class="amenity-card-desc">Multi-tiered smart entry system with automated vehicle RFID tags, visitor app approval, and physical guard checkpoints.</p>
+              <div class="amenity-tags">
+                <span>RFID Gate</span>
+                <span>Visitor App</span>
+                <span>Perimeter CCTV</span>
+              </div>
+              <div class="amenity-card-footer">
+                <button class="btn-card-action open-modal-btn" data-amenity="entrance">
+                  <span>Explore Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <a href="#simulator-section" class="btn-card-book" title="Book Slot">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amenity 6: Villa Tree-Lined Boulevards -->
+          <div class="amenity-card" data-category="nature">
+            <div class="amenity-thumb-wrap">
+              <img src="assets/images/luxury_villas.png" alt="Tree-lined Villa Boulevards" class="amenity-thumb">
+              <span class="amenity-cat-badge">Parks & Outdoors</span>
+              <span class="amenity-status-badge available"><i class="fa-solid fa-circle-check"></i> Always Open</span>
+            </div>
+            <div class="amenity-body">
+              <div class="amenity-meta-row">
+                <span><i class="fa-regular fa-clock"></i> 24/7 Access</span>
+                <span><i class="fa-solid fa-person-walking"></i> Speed-Calmed</span>
+              </div>
+              <h3 class="amenity-card-title">Villa Enclave Boulevards & Lawns</h3>
+              <p class="amenity-card-desc">Serene pedestrian-friendly avenues flanked by shade trees, manicured hedges, ornamental streetlights, and private lawns.</p>
+              <div class="amenity-tags">
+                <span>Private Lawns</span>
+                <span>Jogging Path</span>
+                <span>Child-Safe</span>
+              </div>
+              <div class="amenity-card-footer">
+                <button class="btn-card-action open-modal-btn" data-amenity="villas">
+                  <span>Explore Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <a href="#simulator-section" class="btn-card-book" title="Book Slot">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amenity 7: Tower Lobbies & Elevators -->
+          <div class="amenity-card" data-category="clubhouse">
+            <div class="amenity-thumb-wrap">
+              <img src="assets/images/tower_19.jpg" alt="Tower Entrance Lobbies" class="amenity-thumb">
+              <span class="amenity-cat-badge">Clubhouse</span>
+              <span class="amenity-status-badge available"><i class="fa-solid fa-circle-check"></i> 24/7 Lobby</span>
+            </div>
+            <div class="amenity-body">
+              <div class="amenity-meta-row">
+                <span><i class="fa-regular fa-clock"></i> 24 Hours</span>
+                <span><i class="fa-solid fa-couch"></i> Air-Conditioned</span>
+              </div>
+              <h3 class="amenity-card-title">Double-Height Tower Entrance Lobbies</h3>
+              <p class="amenity-card-desc">Prestigious reception foyers with plush visitor seating, digital notice kiosks, concierge desk, and high-speed elevators.</p>
+              <div class="amenity-tags">
+                <span>Air-Conditioned</span>
+                <span>Concierge Desk</span>
+                <span>Intercom</span>
+              </div>
+              <div class="amenity-card-footer">
+                <button class="btn-card-action open-modal-btn" data-amenity="towers">
+                  <span>Explore Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <a href="#simulator-section" class="btn-card-book" title="Book Slot">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amenity 8: Multi-Sports Courts -->
+          <div class="amenity-card" data-category="sports">
+            <div class="amenity-thumb-wrap">
+              <img src="assets/images/fitness_gym.jpg" alt="Indoor Badminton & Sports Arena" class="amenity-thumb">
+              <span class="amenity-cat-badge">Sports & Fitness</span>
+              <span class="amenity-status-badge available"><i class="fa-solid fa-circle-check"></i> Open Daily</span>
+            </div>
+            <div class="amenity-body">
+              <div class="amenity-meta-row">
+                <span><i class="fa-regular fa-clock"></i> 06:00 - 22:00</span>
+                <span><i class="fa-solid fa-trophy"></i> Multi-Court</span>
+              </div>
+              <h3 class="amenity-card-title">Indoor Badminton & Squash Arena</h3>
+              <p class="amenity-card-desc">International tournament-standard wooden sprung badminton courts, squash court, and indoor table tennis tables.</p>
+              <div class="amenity-tags">
+                <span>Wooden Flooring</span>
+                <span>LED Lighting</span>
+                <span>Racquet Sports</span>
+              </div>
+              <div class="amenity-card-footer">
+                <button class="btn-card-action open-modal-btn" data-amenity="badminton">
+                  <span>Explore Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <a href="#simulator-section" class="btn-card-book" title="Book Slot">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amenity 9: Central Landscaped Park -->
+          <div class="amenity-card" data-category="nature">
+            <div class="amenity-thumb-wrap">
+              <img src="assets/images/entrance_gate.jpg" alt="Central Landscaped Park & Play Arena" class="amenity-thumb">
+              <span class="amenity-cat-badge">Parks & Outdoors</span>
+              <span class="amenity-status-badge available"><i class="fa-solid fa-circle-check"></i> Open Daily</span>
+            </div>
+            <div class="amenity-body">
+              <div class="amenity-meta-row">
+                <span><i class="fa-regular fa-clock"></i> 05:00 - 22:00</span>
+                <span><i class="fa-solid fa-child-reaching"></i> All Ages</span>
+              </div>
+              <h3 class="amenity-card-title">Central Landscaped Parks & Toddler Zone</h3>
+              <p class="amenity-card-desc">Lush sprawling green lawns with reflexology walkways, gazebos, dedicated play equipment for toddlers, and senior citizen seating.</p>
+              <div class="amenity-tags">
+                <span>Kids Play Zone</span>
+                <span>Jogging Loop</span>
+                <span>Senior Pergola</span>
+              </div>
+              <div class="amenity-card-footer">
+                <button class="btn-card-action open-modal-btn" data-amenity="park">
+                  <span>Explore Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <a href="#simulator-section" class="btn-card-book" title="Book Slot">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amenity 10: Resident Banquet & Community Hall -->
+          <div class="amenity-card" data-category="clubhouse">
+            <div class="amenity-thumb-wrap">
+              <img src="assets/images/pool_deck.jpg" alt="Clubhouse Banquet & Celebration Hall" class="amenity-thumb">
+              <span class="amenity-cat-badge">Clubhouse</span>
+              <span class="amenity-status-badge available"><i class="fa-solid fa-circle-check"></i> Reservation</span>
+            </div>
+            <div class="amenity-body">
+              <div class="amenity-meta-row">
+                <span><i class="fa-regular fa-clock"></i> Book on Demand</span>
+                <span><i class="fa-solid fa-champagne-glasses"></i> 300+ Capacity</span>
+              </div>
+              <h3 class="amenity-card-title">Grand Banquet & Multi-Purpose Hall</h3>
+              <p class="amenity-card-desc">Air-conditioned event space with catering kitchen, stage, acoustic sound system, and overflow poolside party lawn for resident festivals.</p>
+              <div class="amenity-tags">
+                <span>Event Hall</span>
+                <span>Party Lawn</span>
+                <span>Sound System</span>
+              </div>
+              <div class="amenity-card-footer">
+                <button class="btn-card-action open-modal-btn" data-amenity="banquet">
+                  <span>Explore Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <a href="#simulator-section" class="btn-card-book" title="Book Slot">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: INTERACTIVE MASTER CAMPUS PLAN / HOTSPOT MAP -->
+    <section id="campus-map-section" class="campus-map-section">
+      <div class="container">
+        <div class="section-intro text-center">
+          <div class="section-badge"><i class="fa-solid fa-map"></i> MASTER PLAN & HOTSPOTS</div>
+          <h2 class="section-title">Explore the 30+ Acre Township Layout</h2>
+          <p class="section-subtitle">Click or tap on any zone to reveal details, resident access routes, and walking times between the 33 towers and 111 villas.</p>
+        </div>
+
+        <div class="map-interactive-wrapper">
+          
+          <!-- Master Plan Canvas / SVG View -->
+          <div class="master-plan-stage">
+            <div class="map-blueprint">
+              <div class="map-grid-lines"></div>
+
+              <!-- Zone 1: Main Gated Entrance -->
+              <div class="map-pin-hotspot active" style="top: 82%; left: 48%;" data-zone="entrance" title="Main Entrance & Security">
+                <span class="pin-pulse"></span>
+                <span class="pin-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                <span class="pin-tooltip">Main Gate & Security</span>
+              </div>
+
+              <!-- Zone 2: 33 Towers Cluster Alpha (1-16) -->
+              <div class="map-pin-hotspot" style="top: 35%; left: 24%;" data-zone="towers-alpha" title="Towers Cluster Alpha (1-16)">
+                <span class="pin-pulse"></span>
+                <span class="pin-icon"><i class="fa-solid fa-building"></i></span>
+                <span class="pin-tooltip">Towers 1 &ndash; 16</span>
+              </div>
+
+              <!-- Zone 3: 33 Towers Cluster Beta (17-33, feat. Tower 19) -->
+              <div class="map-pin-hotspot" style="top: 25%; left: 45%;" data-zone="towers-beta" title="Towers Cluster Beta (17-33 feat. Tower 19)">
+                <span class="pin-pulse"></span>
+                <span class="pin-icon"><i class="fa-solid fa-city"></i></span>
+                <span class="pin-tooltip">Tower 19 &amp; 17-33</span>
+              </div>
+
+              <!-- Zone 4: 111 Luxury Villas Enclave -->
+              <div class="map-pin-hotspot" style="top: 38%; left: 74%;" data-zone="villas" title="111 Signature Villas Enclave">
+                <span class="pin-pulse"></span>
+                <span class="pin-icon"><i class="fa-solid fa-house-chimney-window"></i></span>
+                <span class="pin-tooltip">111 Villas Enclave</span>
+              </div>
+
+              <!-- Zone 5: Grand Clubhouse & Dual Olympic Swimming Pools -->
+              <div class="map-pin-hotspot" style="top: 55%; left: 48%;" data-zone="pools" title="Clubhouse & Dual Olympic Pools">
+                <span class="pin-pulse"></span>
+                <span class="pin-icon"><i class="fa-solid fa-water-ladder"></i></span>
+                <span class="pin-tooltip">Clubhouse &amp; Pools</span>
+              </div>
+
+              <!-- Zone 6: Central Park & Sports Arena -->
+              <div class="map-pin-hotspot" style="top: 62%; left: 28%;" data-zone="sports" title="Central Park & Sports Arena">
+                <span class="pin-pulse"></span>
+                <span class="pin-icon"><i class="fa-solid fa-baseball-bat-ball"></i></span>
+                <span class="pin-tooltip">Sports Arena &amp; Park</span>
+              </div>
+
+              <!-- Visual Map Legend Overlay -->
+              <div class="map-hud-legend">
+                <div class="hud-item"><span class="hud-color towers"></span> 33 Towers (G+14)</div>
+                <div class="hud-item"><span class="hud-color villas"></span> 111 Villas (Duplex)</div>
+                <div class="hud-item"><span class="hud-color pools"></span> Olympic Pool &amp; Club</div>
+                <div class="hud-item"><span class="hud-color green"></span> Landscaped Parks</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Hotspot Info Card -->
+          <div class="hotspot-info-panel" id="hotspot-info-panel">
+            <div class="hotspot-card" id="hotspot-card">
+              <div class="hotspot-card-img-wrap">
+                <img src="assets/images/entrance_gate.jpg" id="hotspot-card-img" alt="Hotspot Preview">
+                <span class="hotspot-category-badge" id="hotspot-badge">Gate & Security</span>
+              </div>
+              <div class="hotspot-card-content">
+                <div class="hotspot-coords" id="hotspot-coords">GPS: 13.1147&deg; N, 80.2486&deg; E &bull; Main Entry</div>
+                <h3 class="hotspot-title" id="hotspot-title">Main Township Gated Portal</h3>
+                <p class="hotspot-desc" id="hotspot-desc">
+                  The primary gated entrance of North Town. Equipped with 24/7 smart RFID boom barriers, biometric visitor verification, wide 60ft palm avenue, and emergency response center.
+                </p>
+                <div class="hotspot-features" id="hotspot-features">
+                  <span><i class="fa-solid fa-route"></i> 2-min walk to Clubhouse</span>
+                  <span><i class="fa-solid fa-shield"></i> 24/7 Security Desk</span>
+                  <span><i class="fa-solid fa-car"></i> Dedicated Visitor Parking</span>
+                </div>
+                <div class="hotspot-footer">
+                  <button class="btn btn-outline-gold btn-sm open-modal-btn" id="hotspot-detail-btn" data-amenity="entrance">
+                    <i class="fa-solid fa-circle-info"></i> Full Specifications
+                  </button>
+                  <a href="#simulator-section" class="btn btn-primary-gold btn-sm">
+                    <i class="fa-solid fa-calendar-check"></i> Book Facility
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: AMENITY BOOKING SIMULATOR & PASS GENERATOR -->
+    <section id="simulator-section" class="simulator-section">
+      <div class="container">
+        <div class="section-intro text-center">
+          <div class="section-badge"><i class="fa-solid fa-calendar-days"></i> RESIDENT AMENITY SIMULATOR</div>
+          <h2 class="section-title">Reserve a Facility &amp; Generate Instant Pass</h2>
+          <p class="section-subtitle">Experience how seamless life is at North Town. Test our instant facility reservation engine to generate a digital QR access pass.</p>
+        </div>
+
+        <div class="simulator-grid">
+          
+          <!-- Booking Form -->
+          <div class="simulator-form-card">
+            <div class="form-header">
+              <i class="fa-solid fa-sliders"></i>
+              <h3>Facility Reservation Engine</h3>
+            </div>
+            
+            <form id="amenity-booking-form" class="booking-form">
+              <div class="form-group">
+                <label for="amenity-select"><i class="fa-solid fa-gem"></i> Select Facility</label>
+                <select id="amenity-select" required>
+                  <option value="pool" selected>Olympic Dual Swimming Pool & Cabana Deck</option>
+                  <option value="badminton">Indoor Wooden Badminton Court (Court 1 & 2)</option>
+                  <option value="gym">Clubhouse Fitness Arena & Cardio Studio</option>
+                  <option value="banquet">Grand Banquet Hall & Poolside Celebration Lawn</option>
+                  <option value="squash">Squash Arena & Table Tennis Room</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="residence-type"><i class="fa-solid fa-house-laptop"></i> Residence Category</label>
+                  <select id="residence-type" required>
+                    <option value="tower" selected>33 Towers (Skyline Residence)</option>
+                    <option value="villa">111 Villas (Duplex Signature Villa)</option>
+                    <option value="guest">VIP Prospective Resident / Guest</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="unit-number"><i class="fa-solid fa-hashtag"></i> Unit / Door No.</label>
+                  <input type="text" id="unit-number" placeholder="e.g. Tower 19 - 802 or Villa 45" value="Tower 19 - Flat 1204" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="booking-date"><i class="fa-solid fa-calendar"></i> Date</label>
+                  <input type="date" id="booking-date" required>
+                </div>
+                <div class="form-group">
+                  <label for="booking-slot"><i class="fa-solid fa-clock"></i> Time Slot</label>
+                  <select id="booking-slot" required>
+                    <option value="06:00 AM - 07:30 AM (Sunrise Slot)">06:00 AM - 07:30 AM (Sunrise)</option>
+                    <option value="07:30 AM - 09:00 AM (Morning Prime)">07:30 AM - 09:00 AM (Morning Prime)</option>
+                    <option value="04:30 PM - 06:00 PM (Sunset Leisure)" selected>04:30 PM - 06:00 PM (Sunset Leisure)</option>
+                    <option value="06:00 PM - 07:30 PM (Evening Twilight)">06:00 PM - 07:30 PM (Evening Twilight)</option>
+                    <option value="07:30 PM - 09:00 PM (Night Sessions)">07:30 PM - 09:00 PM (Night Sessions)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="resident-name"><i class="fa-solid fa-user"></i> Resident Name</label>
+                  <input type="text" id="resident-name" placeholder="Full Name" value="Rohan Sharma" required>
+                </div>
+                <div class="form-group">
+                  <label for="attendees-count"><i class="fa-solid fa-users"></i> Attendees</label>
+                  <select id="attendees-count">
+                    <option value="1 Member">1 Member</option>
+                    <option value="2 Members" selected>2 Members</option>
+                    <option value="3 Members">3 Members</option>
+                    <option value="4+ Family Members">4+ Family Members</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary-gold btn-block" id="generate-pass-btn">
+                <i class="fa-solid fa-qrcode"></i>
+                <span>Generate Digital Access Pass</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Pass Display Result -->
+          <div class="simulator-pass-card">
+            <div class="pass-wrapper" id="pass-preview">
+              <div class="pass-ribbon">NORTH TOWN RESIDENT PASS</div>
+              
+              <div class="pass-header">
+                <div class="pass-logo">
+                  <i class="fa-solid fa-compass-drafting"></i>
+                  <div>
+                    <strong>NORTH TOWN</strong>
+                    <small>33 Towers &bull; 111 Villas</small>
+                  </div>
+                </div>
+                <div class="pass-status-pill">
+                  <i class="fa-solid fa-check-circle"></i> VERIFIED
+                </div>
+              </div>
+
+              <div class="pass-content">
+                <div class="pass-facility-name" id="pass-facility-title">Olympic Dual Swimming Pool &amp; Cabana Deck</div>
+                <div class="pass-facility-sub" id="pass-facility-meta">Clubhouse Aquatic Complex &bull; Lap &amp; Leisure</div>
+
+                <div class="pass-details-grid">
+                  <div class="pass-field">
+                    <label>RESIDENT</label>
+                    <strong id="pass-res-name">Rohan Sharma</strong>
+                  </div>
+                  <div class="pass-field">
+                    <label>UNIT / ADDRESS</label>
+                    <strong id="pass-res-unit">Tower 19 - Flat 1204</strong>
+                  </div>
+                  <div class="pass-field">
+                    <label>DATE</label>
+                    <strong id="pass-date-val">Today</strong>
+                  </div>
+                  <div class="pass-field">
+                    <label>TIME SLOT</label>
+                    <strong id="pass-slot-val">04:30 PM - 06:00 PM</strong>
+                  </div>
+                  <div class="pass-field">
+                    <label>ATTENDEES</label>
+                    <strong id="pass-attendees-val">2 Members</strong>
+                  </div>
+                  <div class="pass-field">
+                    <label>GATE ACCESS</label>
+                    <strong class="text-gold">TURNSTILE #3</strong>
+                  </div>
+                </div>
+
+                <div class="pass-qr-section">
+                  <div class="pass-qr-box">
+                    <!-- Clean SVG simulated QR code -->
+                    <svg viewBox="0 0 100 100" class="qr-svg">
+                      <rect width="100" height="100" fill="#ffffff" rx="8"/>
+                      <!-- Top Left Finder -->
+                      <rect x="10" y="10" width="26" height="26" fill="#0b0f17"/>
+                      <rect x="14" y="14" width="18" height="18" fill="#ffffff"/>
+                      <rect x="18" y="18" width="10" height="10" fill="#0b0f17"/>
+                      <!-- Top Right Finder -->
+                      <rect x="64" y="10" width="26" height="26" fill="#0b0f17"/>
+                      <rect x="68" y="14" width="18" height="18" fill="#ffffff"/>
+                      <rect x="72" y="18" width="10" height="10" fill="#0b0f17"/>
+                      <!-- Bottom Left Finder -->
+                      <rect x="10" y="64" width="26" height="26" fill="#0b0f17"/>
+                      <rect x="14" y="68" width="18" height="18" fill="#ffffff"/>
+                      <rect x="18" y="72" width="10" height="10" fill="#0b0f17"/>
+                      <!-- Data dots -->
+                      <rect x="42" y="14" width="6" height="6" fill="#0b0f17"/>
+                      <rect x="52" y="20" width="6" height="6" fill="#0b0f17"/>
+                      <rect x="42" y="32" width="14" height="6" fill="#0b0f17"/>
+                      <rect x="20" y="44" width="8" height="8" fill="#0b0f17"/>
+                      <rect x="36" y="44" width="12" height="6" fill="#0b0f17"/>
+                      <rect x="54" y="40" width="8" height="14" fill="#0b0f17"/>
+                      <rect x="70" y="44" width="14" height="6" fill="#0b0f17"/>
+                      <rect x="44" y="60" width="14" height="8" fill="#0b0f17"/>
+                      <rect x="64" y="62" width="10" height="10" fill="#0b0f17"/>
+                      <rect x="78" y="70" width="12" height="8" fill="#0b0f17"/>
+                      <rect x="46" y="76" width="14" height="14" fill="#0b0f17"/>
+                    </svg>
+                  </div>
+                  <div class="pass-barcode-wrap">
+                    <div class="pass-auth-code" id="pass-code">NT-PASS-2026-9481</div>
+                    <small><i class="fa-solid fa-lock"></i> Auto-synced with RFID turnstiles</small>
+                  </div>
+                </div>
+
+                <div class="pass-footer-note">
+                  <i class="fa-solid fa-circle-exclamation"></i>
+                  <span>Please carry appropriate swimwear / non-marking shoes for indoor sports courts.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: RESIDENT TESTIMONIALS & COMMUNITY LIFE -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-intro text-center">
+          <div class="section-badge"><i class="fa-solid fa-heart"></i> TOWNSHIP LIFESTYLE</div>
+          <h2 class="section-title">Life at North Town: In Their Words</h2>
+          <p class="section-subtitle">Hear from actual residents living across our 33 high-rise towers and 111 tranquil villas.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote-text">
+              "Moving to Tower 19 has been transformative. Our morning swim in the Olympic lap pool followed by coffee on the sun deck feels like living in an international 5-star resort every single day."
+            </p>
+            <div class="author-row">
+              <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="author-info">
+                <strong>Anand &amp; Priya R.</strong>
+                <span>Tower 19 &bull; 8th Floor Resident (3 Years)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card featured">
+            <div class="featured-badge">VILLA RESIDENT</div>
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote-text">
+              "The 111 villa enclave gives us the dream balance: our kids can ride their bicycles along quiet, tree-shaded avenues with zero outside traffic, while having 50+ clubhouse facilities just a 3-minute stroll away."
+            </p>
+            <div class="author-row">
+              <div class="author-avatar"><i class="fa-solid fa-user-nurse"></i></div>
+              <div class="author-info">
+                <strong>Dr. Suresh &amp; Deepa V.</strong>
+                <span>Villa #48 &bull; Boulevard Enclave</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote-text">
+              "The security is truly benchmark-grade. The RFID boom barriers and visitor pre-approvals give us complete peace of mind when our elderly parents take evening strolls across the landscaped central park."
+            </p>
+            <div class="author-row">
+              <div class="author-avatar"><i class="fa-solid fa-user-gear"></i></div>
+              <div class="author-info">
+                <strong>Karthik Sundaram</strong>
+                <span>Tower 12 &bull; Resident Association Member</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: SCHEDULE A VIP CAMPUS VISIT / INQUIRY -->
+    <section id="contact-section" class="contact-section">
+      <div class="container">
+        <div class="contact-card-wrap">
+          <div class="contact-info-col">
+            <div class="section-badge"><i class="fa-solid fa-calendar-check"></i> VIP CAMPUS EXPERIENCE</div>
+            <h2 class="contact-title">Experience North Town in Person</h2>
+            <p class="contact-desc">
+              Book a guided golf-cart tour of our 33 towers, 111 villas, Olympic swimming pools, and 50,000 sq.ft. clubhouse. Our township specialists will guide you through every amenity.
+            </p>
+
+            <div class="contact-highlights">
+              <div class="ch-item">
+                <div class="ch-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <strong>North Town Integrated Township</strong>
+                  <p>Binny Mills Campus, Perambur, Chennai &ndash; 600012</p>
+                </div>
+              </div>
+              <div class="ch-item">
+                <div class="ch-icon"><i class="fa-solid fa-car-side"></i></div>
+                <div>
+                  <strong>Complimentary Golf Cart Tour</strong>
+                  <p>Full 30+ acre campus exploration with amenity access</p>
+                </div>
+              </div>
+              <div class="ch-item">
+                <div class="ch-icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                  <strong>Township Office Hours</strong>
+                  <p>Open 7 Days a Week: 09:00 AM &ndash; 07:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-col">
+            <form id="campus-visit-form" class="visit-form">
+              <h3>Reserve Your Campus Tour</h3>
+              <div class="form-group">
+                <label for="visitor-name">Your Full Name</label>
+                <input type="text" id="visitor-name" placeholder="e.g. Vikramaditya" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="visitor-phone">Phone Number</label>
+                  <input type="tel" id="visitor-phone" placeholder="+91 98765 43210" required>
+                </div>
+                <div class="form-group">
+                  <label for="visitor-email">Email Address</label>
+                  <input type="email" id="visitor-email" placeholder="name@domain.com" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="visitor-pref">Interested In</label>
+                  <select id="visitor-pref">
+                    <option value="both" selected>Both 33 Towers & 111 Villas</option>
+                    <option value="towers">33 High-Rise Towers (Apartments)</option>
+                    <option value="villas">111 Signature Villas (Independent)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="visitor-date">Preferred Date</label>
+                  <input type="date" id="visitor-date" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="visitor-notes">Specific Amenities You Want to Tour</label>
+                <input type="text" id="visitor-notes" placeholder="e.g. Olympic pool, gym, badminton court, villa gardens">
+              </div>
+              <button type="submit" class="btn btn-gold-large btn-block" id="submit-tour-btn">
+                <span>Confirm VIP Tour Booking</span>
+                <i class="fa-solid fa-calendar-check"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- AMENITY SPECIFICATION MODAL -->
+  <div id="amenity-modal" class="amenity-modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-body-grid">
+        <div class="modal-gallery">
+          <img src="" alt="Amenity detail" id="modal-img" class="modal-main-img">
+          <div class="modal-img-caption" id="modal-img-caption">Authentic North Town Photograph</div>
+        </div>
+        <div class="modal-info">
+          <div class="modal-cat-tag" id="modal-cat">FACILITY DETAIL</div>
+          <h2 class="modal-title" id="modal-title">Amenity Title</h2>
+          <div class="modal-timings" id="modal-timings"><i class="fa-regular fa-clock"></i> <span>Open Daily</span></div>
+          <p class="modal-desc" id="modal-desc">Detailed descriptions and technical specifications.</p>
+
+          <div class="modal-spec-box">
+            <h4>Highlights & Specifications</h4>
+            <ul id="modal-features-list" class="modal-features-list">
+              <!-- Dynamically populated -->
+            </ul>
+          </div>
+
+          <div class="modal-actions">
+            <a href="#simulator-section" class="btn btn-primary-gold" id="modal-book-cta">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span>Book This Facility</span>
+            </a>
+            <button class="btn btn-outline-gold" id="modal-dismiss-btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast-notify" class="toast-notify">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">Reservation confirmed!</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-top">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <i class="fa-solid fa-compass-drafting"></i>
+          <div>
+            <strong>NORTH TOWN</strong>
+            <span>33 TOWERS &bull; 111 VILLAS</span>
+          </div>
+        </div>
+        <p class="footer-about">
+          A flagship integrated gated community spanning over 30 acres in Perambur, Chennai. Home to 33 architectural high-rise towers, 111 luxury duplex villas, dual Olympic pools, and over 50 world-class amenities.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Key Facilities</h4>
+        <ul class="footer-links">
+          <li><a href="#amenities-section"><i class="fa-solid fa-chevron-right"></i> Olympic Swimming Complex</a></li>
+          <li><a href="#amenities-section"><i class="fa-solid fa-chevron-right"></i> Poolside Sun Deck & Loungers</a></li>
+          <li><a href="#amenities-section"><i class="fa-solid fa-chevron-right"></i> 50,000 sq.ft. Clubhouse</a></li>
+          <li><a href="#amenities-section"><i class="fa-solid fa-chevron-right"></i> Technogym Fitness Studio</a></li>
+          <li><a href="#amenities-section"><i class="fa-solid fa-chevron-right"></i> Wooden Badminton Courts</a></li>
+          <li><a href="#amenities-section"><i class="fa-solid fa-chevron-right"></i> 24/7 Gated Security & RFID</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Township Residential</h4>
+        <ul class="footer-links">
+          <li><a href="#compare-section"><i class="fa-solid fa-chevron-right"></i> 33 High-Rise Towers (2/3/4 BHK)</a></li>
+          <li><a href="#compare-section"><i class="fa-solid fa-chevron-right"></i> 111 Signature Duplex Villas</a></li>
+          <li><a href="#campus-map-section"><i class="fa-solid fa-chevron-right"></i> Master Campus Layout Map</a></li>
+          <li><a href="#simulator-section"><i class="fa-solid fa-chevron-right"></i> Resident Amenity Booking</a></li>
+          <li><a href="#contact-section"><i class="fa-solid fa-chevron-right"></i> Schedule VIP Campus Tour</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Township Desk & Gate</h4>
+        <div class="footer-contact-info">
+          <p><i class="fa-solid fa-location-dot"></i> North Town Boulevard, Perambur, Chennai &ndash; 600012</p>
+          <p><i class="fa-solid fa-phone"></i> +91 44 2662 8800 / +91 98400 11133</p>
+          <p><i class="fa-solid fa-envelope"></i> concierge@northtowncommunity.in</p>
+          <p><i class="fa-solid fa-shield"></i> Security Main Gate: Intercom Ext 101</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <div class="footer-copyright">
+        &copy; 2026 North Town Apartment Society &amp; Villa Owners Association. All Rights Reserved.
+      </div>
+      <div class="footer-extra-links">
+        <a href="#journey-section">Scroll Journey</a> &bull;
+        <a href="#amenities-section">Amenities</a> &bull;
+        <a href="#campus-map-section">Master Plan</a> &bull;
+        <a href="#simulator-section">Pass Generator</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Logic Script -->
+  <script src="app.js"></script>
+</body>
+</html>
